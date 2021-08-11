@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500;700&family=Fraunces:wght@700&display=swap");
+
+@media (max-width: 1024px) {
+}
+
+@media (min-width: 1025px) {
+  .box-1 {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(3, 525px);
+  }
+}
+body {
+  margin: 0;
+  text-align: center;
+}
+
+h1,
+h2,
+h4,
+h5 {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+}
+
+.box-header {
+  background-image: url("./images/Orange\ Slice.png");
+  background-size: cover;
+  width: 100%;
+  min-height: 702px;
+  display: block;
+  color: white;
+}
+
+.top-nav {
+  padding: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+}
+
+.top-nav h1 {
+  font-size: xx-large;
+}
+
+.myLinks {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.myLinks a {
+  text-decoration: none;
+  font-size: large;
+}
+
+.link {
+  color: white;
+}
+
+.myButton {
+  background-color: white;
+  border-radius: 28px;
+  cursor: pointer;
+  color: black;
+  font-family: "Fraunces", serif;
+  font-size: 17px;
+  padding: 16px 31px;
+  text-decoration: none;
+}
+.myButton:hover {
+  background-color: #78cdf5;
+  color: white;
+}
+
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+.top-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4rem;
+  font-family: "Fraunces", serif;
+  letter-spacing: 0.5rem;
+  font-size: xx-large;
+}
+
+.top-box img {
+  width: 4%;
+  padding-top: 4rem;
+}
+
+.box-1 {
+  display: grid;
+}
+
+.box-2 {
+  padding: 7rem;
+  text-align: start;
+}
+
+.box-2 h2 {
+  font-family: "Fraunces", serif;
+  font-size: 40px;
+}
+
+.box-2 p {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  color: #808397;
+}
+
+.box-3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.box-4 {
+  background-image: url("./images/Cherry.png");
+  background-size: cover;
+  position: relative;
+}
+
+.box-45 {
+  padding-left: 10rem;
+  padding-right: 10rem;
+  position: absolute;
+  bottom: 2rem;
+}
+
+.box-5 {
+  background-image: url("./images/Orange.png");
+  background-size: cover;
+  position: relative;
+}
+
+.box-6 {
+  padding: 7rem;
+}
+
+.box-6 h3 {
+  padding-bottom: 2rem;
+  font-family: "Fraunces", serif;
+  color: #a7aaad;
+  letter-spacing: 0.3rem;
+}
+
+.box-7 {
+  display: flex;
+  justify-content: center;
+}
+
+.box-8 {
+  padding: 0 1.5rem;
+}
+
+.box-8 img {
+  border-radius: 100%;
+  width: 72px;
+}
+
+.box-8 p {
+  padding-top: 2rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  color: #5b636d;
+}
+
+.box-8 h4 {
+  padding: 2rem 0 0.5rem;
+  font-family: "Fraunces", serif;
+}
+
+.box-8 h5 {
+  color: #a7aaad;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+}
+
+.box-9 {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.box-9 img {
+  width: 25%;
+}
+
+.footer {
+  background-color: #90d4c6;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Barlow", sans-serif;
+}
+
+.footer h2 {
+  color: #2c7566;
+  font-weight: 700;
+  font-size: xx-large;
+}
+
+.footer-nav {
+  width: 25%;
+  display: flex;
+  justify-content: space-evenly;
+  color: #458d7e;
+  padding-top: 1.5rem;
+  font-weight: 500;
+}
+
+.footer .icon {
+  display: flex;
+  justify-content: space-evenly;
+  width: 10%;
+  padding: 3.5rem 0 2rem;
+  color: #2c7566;
+}

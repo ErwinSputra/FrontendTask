@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces&display=swap");
+
+.container {
+  display: grid;
+}
+
+.box-topnav {
+  width: 375px;
+  height: 538px;
+  background-image: url("./images/Mob-OrangeSlice.png");
+  background-size: cover;
+  color: aliceblue;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+}
+
+h2,
+h3 {
+  font-family: "Fraunces", serif;
+}
+
+.topnav {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  max-height: 40px;
+}
+
+/* #myLinks {
+  display: none;
+} */
+
+.myLinks {
+  padding: 2rem;
+  position: absolute;
+  top: 80px;
+}
+
+.header {
+  background-color: white;
+  height: 330px;
+  width: 310px;
+}
+
+.myLinks a {
+  color: black;
+  text-decoration: none;
+  font-size: x-large;
+}
+
+.links {
+  padding: 2rem;
+  display: grid;
+  align-items: center;
+  grid-row-gap: 2.5rem;
+}
+
+h1 {
+  margin: 0;
+}
+
+.box-1 {
+  display: grid;
+  justify-items: center;
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+  padding: 1.5rem;
+}
+
+.box-2 {
+  width: 375px;
+  height: 312px;
+}
+
+.box-2 img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.box-3 {
+  padding: 1.5rem 1.5rem 3.5rem 1.5rem;
+  font-size: large;
+}
+
+.box-3 h3 {
+  font-size: xx-large;
+}
+
+.box-3 p {
+  color: #808397;
+}
+
+.box-4 {
+  height: 600px;
+  background-image: url("./images/mob-cherry.png");
+  background-size: cover;
+  position: relative;
+}
+
+.box-5 {
+  padding: 0 2rem;
+  position: absolute;
+  bottom: 2rem;
+}
+
+.box-6 {
+  height: 600px;
+  background-image: url("./images/mob-orange.png");
+  background-size: cover;
+  position: relative;
+}
+
+.box-7 {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.box-8 {
+  padding: 2rem 0;
+}
+
+.box-9 {
+  display: grid;
+  grid-template-columns: 188px 188px;
+  grid-template-rows: 188px 188px;
+  height: 376px;
+}
+
+.box-9 img {
+  height: 188px;
+}
+
+.footer {
+  padding: 4rem 2rem;
+  background-color: #90d4c6;
+}
+
+.footer h2 {
+  color: #2c7566;
+  margin-block-start: 0;
+}
+
+.footer h3 {
+  color: #458d7e;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer .icon {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 4rem;
+  color: #2c7566;
+}
