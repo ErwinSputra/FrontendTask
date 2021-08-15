@@ -2,15 +2,78 @@
 
 @media (max-width: 1024px) {
   .box-header {
-    height: 1100px;
+    height: 1000px;
   }
 
   .top-nav h1 {
     font-size: 4rem;
   }
 
+  .burger span {
+    display: block;
+    width: 55px;
+    height: 4px;
+    margin-top: 14px;
+    position: relative;
+
+    background: #e6e6e6;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+  }
+
   .top-box {
     padding: 8rem 5rem 5rem;
+  }
+
+  #talkBubble {
+    display: none;
+  }
+
+  .talk-bubble {
+    position: absolute;
+    width: 550px;
+    height: 600px;
+    background-color: white;
+    top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .talk-bubble a {
+    text-decoration: none;
+  }
+
+  .talk-bubble .link {
+    font-family: "Barlow", sans-serif;
+    color: #808397;
+    font-size: 40px;
+  }
+
+  .myButton {
+    background-color: #fbd600;
+    border-radius: 60px;
+    color: black;
+    font-family: "Fraunces", serif;
+    padding: 30px 0;
+    text-decoration: none;
+    width: 300px;
+  }
+
+  .tri-right.btm-right:after {
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: auto;
+    right: 0px;
+    top: -50px;
+    border: 30px solid;
+    border-color: transparent white white transparent;
   }
 
   .top-box h1 {
@@ -20,6 +83,10 @@
   .top-box img {
     width: 12%;
     padding-top: 5rem;
+  }
+
+  .myLinks {
+    display: none;
   }
 
   .box-1 {
@@ -33,7 +100,7 @@
   }
 
   .box-2 {
-    padding: 8rem 6rem;
+    padding: 8rem 5rem;
     text-align: center;
   }
 
@@ -48,6 +115,19 @@
 
   .box-2 button {
     font-size: xx-large;
+  }
+
+  .box-2 button::after {
+    height: 18px;
+    margin: -12px -10px 0px;
+  }
+
+  .box-2 .button1::after {
+    background-color: #fad40044;
+  }
+
+  .box-2 .button2::after {
+    background-color: #fe78664b;
   }
 
   .box-4,
@@ -69,7 +149,8 @@
 
   .box-45 h2,
   .box-55 h2 {
-    font-size: 80px;
+    font-size: 60px;
+    padding-bottom: 2rem;
   }
 
   .box-6 {
@@ -109,11 +190,14 @@
   }
 
   .box-9 img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    display: block;
   }
 
   .footer {
-    padding: 8rem 2rem;
+    padding: 6rem 2rem 2rem;
   }
 
   .footer-nav {
@@ -133,7 +217,11 @@
   .footer .icon {
     width: 50%;
     justify-content: space-between;
-    padding: 10rem 0 0;
+    padding: 8rem 0 0;
+  }
+
+  .footer p {
+    padding-top: 2rem;
   }
 
   .icon i {
@@ -150,8 +238,31 @@
     font-size: xx-large;
   }
 
+  .top-nav i {
+    display: none;
+  }
+
   .top-box {
     padding-top: 4rem;
+    letter-spacing: 0.5rem;
+  }
+
+  .myLinks {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .myButton {
+    background-color: white;
+    border-radius: 28px;
+    cursor: pointer;
+    color: black;
+    font-family: "Fraunces", serif;
+    font-size: 17px;
+    padding: 16px 31px;
+    text-decoration: none;
   }
 
   .top-box img {
@@ -177,6 +288,19 @@
     font-size: 40px;
   }
 
+  .box-2 button::after {
+    height: 10px;
+    margin: -5px -8px 0;
+  }
+
+  .box-2 .button1::after {
+    background-color: #fad400d3;
+  }
+
+  .box-2 .button2::after {
+    background-color: #fe7866e7;
+  }
+
   .box-45,
   .box-55 {
     padding: 22rem 9rem 0;
@@ -200,11 +324,14 @@
   }
 
   .box-9 img {
-    width: 25%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
 
   .footer {
-    padding: 3rem 3rem 1.5rem;
+    padding: 3rem 3rem 0;
   }
 
   .footer h2 {
@@ -249,6 +376,7 @@ p {
   background-size: cover;
   width: 100%;
   color: white;
+  background-position: center;
 }
 
 .top-nav {
@@ -263,13 +391,6 @@ p {
   width: 7rem;
 }
 
-.myLinks {
-  width: 50%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
 .myLinks a {
   text-decoration: none;
   font-size: large;
@@ -279,16 +400,6 @@ p {
   color: white;
 }
 
-.myButton {
-  background-color: white;
-  border-radius: 28px;
-  cursor: pointer;
-  color: black;
-  font-family: "Fraunces", serif;
-  font-size: 17px;
-  padding: 16px 31px;
-  text-decoration: none;
-}
 .myButton:hover {
   background-color: #78cdf5;
   color: white;
@@ -304,7 +415,6 @@ p {
   flex-direction: column;
   align-items: center;
   font-family: "Fraunces", serif;
-  letter-spacing: 0.5rem;
   font-size: xx-large;
 }
 
@@ -342,6 +452,18 @@ p {
   color: #808397;
 }
 
+.box-2 button {
+  background-color: white;
+  border: 0;
+  font-family: "Fraunces", serif;
+}
+
+.box-2 button::after {
+  content: "";
+  border-radius: 10px;
+  display: block;
+}
+
 .box-3 img {
   width: 100%;
   height: 100%;
@@ -352,6 +474,7 @@ p {
 .box-4 {
   background-image: url("./images/Cherry.png");
   background-size: cover;
+  background-position: center;
 }
 
 .box-45 h2,
@@ -380,6 +503,7 @@ p {
 .box-5 {
   background-image: url("./images/Orange.png");
   background-size: cover;
+  background-position: center;
 }
 
 .box-6 h3 {
@@ -437,5 +561,9 @@ p {
 
 .footer .icon {
   display: flex;
+  color: #2c7566;
+}
+
+.footer p {
   color: #2c7566;
 }
